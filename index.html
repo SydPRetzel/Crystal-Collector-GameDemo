@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crystal Collector Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap File -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- Custom css file -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Overall Bootstrap Grid -->
+    <div class="container">
+
+        <!-- Jumbotron with Title -->
+        <div class="jumbotron custom-jumbotron">
+            <h1 class="text-center">
+                <strong>Crystal Collector Game</strong>
+            </h1>
+        </div>
+        <div class="row custom-row">
+            <div class="col-6">
+                <div id="gameInstructionsCard" class="card border-light">
+                    <h4 id="gameInstructionsCardHeader" class="card-header custom-card-header">Game Instructions</h4>
+                    <div id="gameInstructionsCardBody" class="card-body custom-card-body">
+                        <p>You will be given a random number at the start of the game.</p>
+                        <p>There are four crystals. By clicking on a crystal you will add a specific amount of
+                            points
+                            to
+                            your
+                            total score.</p>
+                        <p>You win the game by matching your total score to the random number, you lose the game if your
+                            total
+                            score
+                            goes above the random number.</p>
+                        <p>The value of each crystal is hidden from you until you click on it.</p>
+                        <p>Each time when the game starts, the game will change the values of each crystal.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div id="scoresRow" class="row custom-row">
+                    <div id="totalScoresCol" class="col">
+                        <!-- Total Score Board -->
+                        <div id="totalScoresCard" class="card border-light">
+                            <h4 id="totalScoresCardHeader" class="card-header custom-card-header">Total Scores</h4>
+                            <div id="totalScoresCardBody" class="card-body custom-card-body">
+                                <h5>Wins : <span id="wins">0</span></h5>
+                                <h5>Losses : <span id="losses">0</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="currentNumbersCol" class="col">
+                        <!-- Current Game -->
+                        <div id="currentNumbersCard" class="card border-light">
+                            <h4 id="currentNumbersCardHeader" class="card-header custom-card-header">Current Numbers</h4>
+                            <div id="currentNumbersCardBody" class="card-body custom-card-body">
+                                <h5>Target Number : <span id="targetNumber">0</span></h5>
+                                <h5>Player Total : <span id="playerTotal">0</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="crystalsRow" class="row custom-row">
+                    <div id="crystalsCol" class="col">
+                        <!-- Crystal Buttons -->
+                        <div id="crystalsCard" class="card border-light">
+                            <div id="crystalsCardBody" class="card-body custom-card-body">
+                                <div class="row text-center">
+                                    <div class="col">
+                                        <button id="redCrystal" class="btn btn-block normal-button custom-button">
+                                            <img src="./assets/images/ruby.jpg" height="100%" width="100%" />
+                                        </button>
+                                        <!-- <span class="fa fa-ok"></span> Red</button> -->
+                                    </div>
+                                    <div class="col">
+                                        <button id="blueCrystal" class="btn btn-block normal-button custom-button">
+                                            <img src="./assets/images/saphire.jpg" height="100%" width="100%" />
+                                        </button>
+                                        <!-- <span class="fa fa-ok"></span> Blue</button> -->
+                                    </div>
+                                    <div class="col">
+                                        <button id="yellowCrystal" class="btn btn-block normal-button custom-button">
+                                            <img src="./assets/images/amber.jpg" height="100%" width="100%" />
+                                        </button>
+                                        <!-- <span class="fa fa-ok"></span> Yellow</button> -->
+                                    </div>
+                                    <div class="col">
+                                        <button id="greenCrystal" class="btn btn-block normal-button custom-button">
+                                            <img src="./assets/images/emerald.jpg" height="100%" width="100%" />
+                                        </button>
+                                        <!-- <span class="fa fa-ok"></span> Green</button> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="./assets/javascript/game.js"></script>
+
+</body>
+
+</html>
