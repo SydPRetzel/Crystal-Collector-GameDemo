@@ -42,5 +42,9 @@ body {
 }
 
 .custom-card-header {
-  background: #b1adad;
+  background: #ad8108;
+}
+
+#crystalsCardBody {
+  background: #6f027e;
 }
